@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach-Side Clothes Shop</title>
+    <style>
+        * {
+            margin: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #main-landing {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(20, 177, 216);
+        }
+        #left, #right {
+            flex: 1;
+            align-content: center;
+        }
+        #main-title {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
+            font-size: 20vh;
+            margin-left: 5vw;
+        }
+        #navbar {
+            display: flex;
+            background-color: rgb(250, 212, 45);
+            width: 100vw;
+        }
+        #sign-up-btn, #log-in-btn, #products-btn, #cart-btn, #home-btn {
+            background-color: rgb(250, 212, 45);
+            width: 100%;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #sign-up, #log-in, #products, #cart, #home {
+            flex: 1;
+        }
+        header {
+            background-color:rgb(250, 212, 45);
+            padding: 20px;
+        }
+        #products-title {
+            text-align: center;
+        }
+        #products-container {
+            background-color: rgb(94, 185, 94);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .product {
+            margin: 10px;
+            flex: 1;
+            background-color: rgb(129, 255, 156);
+            width: 60%;
+        }
+        a {
+            text-decoration: none;
+        }
+        label {
+            font-size: 5vh;
+            font-weight: bold;
+        }
+        input {
+            font-size: 3vh;
+            border-radius: 75px;
+        }
+        #submit {
+            background-color: rgb(250, 212, 45);
+            font-weight: bold;
+            font-size: 35px;
+            height: 75px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+            <div id="home"><button id="home-btn"><a href="index.html">Home</a></button></div>
+            <div id="sign-up"><button id="sign-up-btn"><a href="signup.html">Sign Up</a></button></div>
+            <div id="log-in"><button id="log-in-btn"><a href="login.html">Log In</a></button></div>
+            <div id="products"><button id="products-btn"><a href="index.html#products-title">Our Products</a></button></div>
+            <div id="cart"><button id="cart-btn"><a href=cart.html>Shopping Cart</a></button></div>
+        </div>
+        <div id="main-landing">
+            
+            <div id="left">
+                <h1 id="main-title">Sign<br>Up</h1>
+            </div>
+            <div id="right">
+                <form onsubmit="alert('Signed Up!')">
+                    <label>Enter Name: </label><br><input type="text"><br>
+                    <br><br><label>Enter Email: </label><br><input type="email"><br>
+                    <br><br><label>Enter Password: </label><br><input type="password"><br>
+                    <br><br><input id="submit" type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
